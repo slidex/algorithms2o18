@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
+Match pattern against a string. Support * and ? wildcard chars.
 test text
 e?t
 te*te
@@ -30,7 +31,7 @@ public class RegexpMatcher {
         find(child, pattern.substring(1));
       }
     } else if (actual == '*') {
-      root.visitAll((child) -> find(child, pattern.substring(1)));
+      root.visitAll((node) -> find(node, pattern.substring(1)));
     } else {
       TrieNode matchingChild = root.findChild(actual);
       if (matchingChild != null) {
