@@ -23,4 +23,4 @@ function combsLimited(n, maxCoinIndex) {
 //         (-1, 2) + 1 + 1 + (1, 1) = 2
 // (4, 1) -> (3, 1) -> (2, 1) -> (1, 1) = 1
 console.log(combs(5));
-console.log(combs(6));
+console.log(combs(11));
