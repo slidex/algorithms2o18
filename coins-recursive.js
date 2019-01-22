@@ -1,4 +1,6 @@
-
+/*
+ * Return the number of how many different ways a given total can be paid with coins.
+ */
 var COINS = [5, 2, 1];
 
 function combs(n) {
