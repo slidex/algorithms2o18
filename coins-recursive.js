@@ -20,6 +20,7 @@ function combs(n) {
   return combsLimited(n, 0);
 }
 
+// TODO: Use memoization later.
 function combsLimited(n, maxCoinIndex) {
   if (n <= 0) {
     return 0;
