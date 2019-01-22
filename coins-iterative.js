@@ -1,5 +1,9 @@
 /*
  * Return the number of how many different ways a given total can be paid with coins.
+ *
+n = sum i->k pi*ci, k: num of coins, ci: ith coin value.
+6 = p0*5+p1*2+p2*1  (6: 5, 2, 1 coins)
+sum = p0*5+p1*2
  */
 var COINS = [5, 2, 1];
 
