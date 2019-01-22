@@ -6,7 +6,8 @@ var COINS = [5, 2, 1];
 function combs(n) {
   var result = 0;
   var counter = new Counter(n);
-  while (counter.inc()) {
+  var hasMore = true;
+  while (hasMore) {
     var sum = 0;
     for (var i = 0; i < COINS.length - 1; i++) {
       sum += counter.value[i] * COINS[i];
@@ -16,6 +17,7 @@ function combs(n) {
       result++;
       console.log(counter.value + ' * ' + COINS);
     }
+    hasMore = counter.inc();
   }
   return result;
 }
@@ -43,5 +45,4 @@ class Counter {
   }
 }
 
-console.log(combs(5));
-console.log(combs(6));
+console.log(combs(11));
