@@ -1,5 +1,18 @@
 /*
  * Return the number of how many different ways a given total can be paid with coins.
+ *
+ 5: 1, 2 coins
+      5
+    /2 \1
+    3   4
+  /2 \1  \1
+ 1    2   3
+ |1   |1  |1
+ 0    1   2
+      |1  |1
+      0   1
+          |1
+          0
  */
 var COINS = [5, 2, 1];
 
