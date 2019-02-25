@@ -1,6 +1,13 @@
 public class BstOperations {
   /**
    * Node of a BST with basic operations: insert, find, delete.
+   *      5
+   *     / \
+   *    4   11
+   *   /    / \
+   *  2    7   15
+   *        \
+   *         10
    */
   public static class Node {
     private int key;
